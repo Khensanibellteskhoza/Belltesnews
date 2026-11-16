@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#a80712">
+<meta name="description" content="About Belltes News for Belltes News.">
+<title>About Belltes News | Belltes News</title>
+<style>
+:root{--brand:#b50916;--ink:#202124;--muted:#687078;--line:#e3e6ea;--page:#f5f6f8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font-family:Inter,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.7}
+a{color:inherit}
+header{background:#fff;border-bottom:1px solid var(--line)}
+.header-inner,main,.footer-inner,.footer-bottom{width:min(100% - 40px,1000px);margin:0 auto}
+.header-inner{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:25px;font-weight:850;letter-spacing:-.7px;text-decoration:none}
+.brand span{color:var(--brand)}
+.back{color:var(--brand);font-size:14px;font-weight:700;text-decoration:none}
+main{margin:38px auto 64px;min-height:55vh}
+.eyebrow{margin:0 0 7px;color:var(--brand);font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+h1{margin:0 0 22px;font-size:clamp(30px,5vw,42px);line-height:1.15;letter-spacing:-1px}
+.content{background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(22px,5vw,42px);box-shadow:0 5px 22px rgba(25,35,45,.05)}
+.content h2{margin:28px 0 8px;font-size:19px;line-height:1.3}
+.content h2:first-child{margin-top:0}
+.content p{margin:0 0 15px;color:#4e565e}
+.content ul{padding-left:22px;color:#4e565e}
+footer{background:#171a1e;color:#e9eaec}
+.footer-inner{padding:24px 0;display:flex;flex-wrap:wrap;gap:15px 25px;align-items:center}
+.footer-inner a{color:#d5d9de;text-decoration:none;font-size:13px}
+.footer-inner a:hover{color:#fff;text-decoration:underline}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:15px 0 20px;color:#aeb5bd;font-size:11px}
+@media(max-width:600px){.header-inner,main,.footer-inner,.footer-bottom{width:calc(100% - 28px)}.header-inner{min-height:76px}main{margin-top:25px}}
+</style>
+</head>
+<body>
+<header><div class="header-inner"><a class="brand" href="index.html">BELLTES <span>NEWS</span></a><a class="back" href="index.html">← Back to homepage</a></div></header>
+<main>
+<p class="eyebrow">Belltes News · South Africa</p>
+<h1>About us</h1>
+<article class="content">
+<p>Belltes News is a South African news discovery platform designed to make it easier to explore stories connected to communities across the country.</p>
+<p>The homepage brings together municipality-focused news searches across all nine provinces. Readers can select a province, narrow the view by municipality where available, and follow links to current reporting from news publishers.</p>
+<h2>What we do</h2>
+<ul><li>Organise news discovery around South Africa’s provinces and municipalities.</li><li>Make it easier to find reporting about local communities and public-interest issues.</li><li>Direct readers to the publishers and sources hosting the original stories.</li></ul>
+<h2>What we do not do</h2>
+<p>Belltes News does not claim ownership of articles hosted by other publishers. Headlines, articles and reporting reached through external links remain the responsibility of their respective publishers.</p>
+</article>
+</main>
+<footer>
+<div class="footer-inner">
+<a href="index.html">Home</a><a href="about.html">About us</a><a href="editorial-policy.html">Editorial policy</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy policy</a><a href="terms-of-use.html">Terms of use</a>
+</div>
+<div class="footer-bottom">© <span id="year"></span> Belltes News. All rights reserved.</div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
